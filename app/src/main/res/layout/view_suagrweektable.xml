@@ -1,0 +1,547 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="检测\n日期"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guidelinedate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <include layout="@layout/item_view_rowtitle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e6e6e6" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="270dp"
+        android:background="#e6e6e6" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_sugartable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="50dp"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="100dp"
+                tools:layout_editor_absoluteX="128dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="150dp"
+                tools:layout_editor_absoluteX="171dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="200dp"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="250dp"
+                tools:layout_editor_absoluteX="256dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="300dp"
+                tools:layout_editor_absoluteX="299dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="350dp"
+                tools:layout_editor_absoluteX="342dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="400dp"
+                tools:layout_editor_absoluteX="384dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="450dp"
+                tools:layout_editor_absoluteX="427dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="500dp"
+                tools:layout_editor_absoluteX="470dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/linetime10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_begin="550dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="60dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="90dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="120dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="150dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="180dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="210dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="240dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/lineday7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="270dp"
+                tools:layout_editor_absoluteX="513dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:tag=""
+                android:text="凌晨"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/linetime0"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="早餐"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime0"
+                app:layout_constraintRight_toLeftOf="@+id/linetime3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="空腹"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime0"
+                app:layout_constraintRight_toLeftOf="@+id/linetime1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐1"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime1"
+                app:layout_constraintRight_toLeftOf="@+id/linetime2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐2"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime2"
+                app:layout_constraintRight_toLeftOf="@+id/linetime3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="午餐"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime3"
+                app:layout_constraintRight_toLeftOf="@+id/linetime6"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="空腹"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime3"
+                app:layout_constraintRight_toLeftOf="@+id/linetime4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐1"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime4"
+                app:layout_constraintRight_toLeftOf="@+id/linetime5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐2"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime5"
+                app:layout_constraintRight_toLeftOf="@+id/linetime6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="晚餐"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime6"
+                app:layout_constraintRight_toLeftOf="@+id/linetime9"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="空腹"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime6"
+                app:layout_constraintRight_toLeftOf="@+id/linetime7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐1"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime7"
+                app:layout_constraintRight_toLeftOf="@+id/linetime8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="餐2"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime8"
+                app:layout_constraintRight_toLeftOf="@+id/linetime9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="睡前"
+                app:layout_constraintLeft_toLeftOf="@+id/linetime9"
+                app:layout_constraintRight_toLeftOf="@+id/linetime10"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime0" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginTop="29dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:background="#e6e6e6"
+                app:layout_constraintBottom_toBottomOf="@id/lineday7"
+                app:layout_constraintLeft_toLeftOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_marginTop="30dp"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="@id/linetime0"
+                app:layout_constraintRight_toRightOf="@id/linetime9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday0" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday2" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday4" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday5" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday6" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:background="#e6e6e6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/linetime10"
+                app:layout_constraintTop_toTopOf="@id/lineday7" />
+        </android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+</LinearLayout>
