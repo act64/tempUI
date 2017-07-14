@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.leistudy.uitest.MainActivity">
-<com.leistudy.uitest.SugarTableView
+<com.leistudy.uitest.SugarDialView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/sugartable"
-    >
+    android:id="@+id/sugardial"
+    ></com.leistudy.uitest.SugarDialView>
 
-</com.leistudy.uitest.SugarTableView>
 
 </LinearLayout>

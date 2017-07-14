@@ -4,31 +4,35 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SugarDialView.DialNumListener {
 
-    SugarTableView sugarTableView;
+    SugarDialView sugarDialView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sugarTableView= (SugarTableView) findViewById(R.id.sugartable);
-        sugarTableView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                sugarTableView.setIsNineColum(false);
-                sugarTableView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-            }
-        });
+        sugarDialView= (SugarDialView) findViewById(R.id.sugardial);
+        sugarDialView.setMdialListener(this);
+    }
+
+
+    @Override
+    public void onDial(SugarDialView.DialObject dialObject) {
+        if(dialObject.getType()== SugarDialView.DialObject.TYPE_INT){
+            Toast.makeText(this,dialObject.getDialnumber()+"",Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
     public void onBackPressed() {
-        if (sugarTableView.isNineColumStyle()){
-            sugarTableView.setIsNineColum(false);
+        if (sugarDialView.getVisibility()== View.VISIBLE){
+            sugarDialView.hide();
         }else {
-            sugarTableView.setIsNineColum(true);
+            sugarDialView.show();
         }
     }
 }
